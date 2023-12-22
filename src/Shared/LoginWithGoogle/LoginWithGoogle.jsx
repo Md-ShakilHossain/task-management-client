@@ -25,13 +25,13 @@ const LoginWithGoogle = () => {
                 const userInfo = {
                     email: result.user.email,
                     name: result.user.displayName,
-                    badge: 'Bronze'
+                    profession: 'Front-end Developer'
                 }
 
                 axiosPublic.post('/users', userInfo)
                     .then(res => {
                         console.log(res.data);
-                        navigate('/');
+                        navigate('/dashboard');
                     })
             })
     }

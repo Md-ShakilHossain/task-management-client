@@ -27,6 +27,7 @@ const Register = () => {
                             email: data.email,
                             profession: data.profession
                         }
+                        console.log(userInfo);
                         axiosPublic.post('/users', userInfo)
                             .then(res => {
                                 if (res.data.insertedId) {
@@ -39,7 +40,7 @@ const Register = () => {
                                         showConfirmButton: false,
                                         timer: 1500
                                     });
-                                    navigate('/');
+                                    navigate('/dashboard');
                                 }
                             })
                     })

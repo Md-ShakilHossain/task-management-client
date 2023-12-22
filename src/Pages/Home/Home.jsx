@@ -17,7 +17,7 @@ const Home = () => {
                             powerful task management tool.
                         </p>
                         <div className="w-fit mx-auto">
-                            <Link to="/login"><button className="bg-blue-500 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 focus:outline-none shadow-xl">
+                            <Link to="/dashboard"><button className="bg-blue-500 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 focus:outline-none shadow-xl">
                                 {`Let's Explore`}
                             </button></Link>
                         </div>
