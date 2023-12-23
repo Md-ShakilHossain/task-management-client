@@ -40,9 +40,11 @@ const Dashboard = () => {
                             tasks.map((task, i) => <div key={task._id} className="p-2 bg-white rounded-2xl w-4/5 mx-auto mt-2">
                                 <h4 className="font-bold">{i+1}. {task.title}</h4>
                                 <p>{task.description}</p>
-                                <p><span className="font-semibold">Deadline</span> {task.deadline}</p>
+                                <p><span className="font-semibold">Deadline:</span> {task.deadline}</p>
+                                <p><span className="font-semibold">Priority:</span> {task.priority}</p>
+
                                 <div className="flex gap-4 justify-center mt-2">
-                                    <button><FaEdit></FaEdit></button>
+                                    <Link to={`/tasks/${task._id}`}><button><FaEdit></FaEdit></button></Link>
                                     <button><FaTrash></FaTrash></button>
                                 </div>
                             </div>)
