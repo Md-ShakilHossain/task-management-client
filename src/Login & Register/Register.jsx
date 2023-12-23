@@ -75,7 +75,7 @@ const Register = () => {
                             {...register('profession', { required: true })}
                             placeholder="Profession"
                             className="input input-bordered mt-2" />
-                        {errors.name?.type === 'required' && <p className="text-red-500 mt-2">Profession is required.</p>}
+                        {errors.profession?.type === 'required' && <p className="text-red-500 mt-2">Profession is required.</p>}
                     </div>
                     <div className="form-control flex flex-col mt-2">
                         <label className="label">
