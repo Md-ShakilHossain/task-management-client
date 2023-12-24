@@ -20,6 +20,9 @@ const Users = () => {
             <hr className="border border-blue-500 mt-4" />
             <h2 className="md:text-2xl lg:text-4xl font-bold text-center">Users who are taking services from us</h2>
             <hr className="border border-blue-500 mt-4" />
+            <div className="my-4">
+                <p className="text-lg font-semibold">This users are benefited using our services by maintaining their daily activities. Like a doctor can make a todo list of his/her daily activities. He/She can drag a task from todo list to ongoing and ongoing to completed.By maintaining this todo list he/she is getting benefit. </p>
+            </div>
             {users.length>0 ? <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}

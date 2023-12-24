@@ -79,10 +79,10 @@ const Navbar = () => {
                                 Tasks
                             </Link>
                             <Link
-                                to="/profile"
+                                to="/targetedAudience"
                                 className="block text-white py-2 px-4 hover:bg-blue-600"
                             >
-                                Profile
+                                Targeted Audience
                             </Link>
                             {
                                 user && <button className='text-white' onClick={handleLogOut}>Logout</button>
@@ -99,8 +99,8 @@ const Navbar = () => {
                     <Link to="/tasks" className="text-white hover:underline">
                         Tasks
                     </Link>
-                    <Link to="/profile" className="text-white hover:underline">
-                        Profile
+                    <Link to="/targetedAudience" className="text-white hover:underline">
+                   Targeted Audience
                     </Link>
                     {
                         user && <button className='text-white' onClick={handleLogOut}>Logout</button>
